@@ -8,8 +8,8 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Entity
-@Table(name = "person")
-public class Person {
+@Table(name = "owner")
+public class Owner {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,11 +32,11 @@ public class Person {
     @Column(name = "telephone")
     private String telephone;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "person")
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "owner")
     @JsonManagedReference
     private List<Pet> pets;
 
-    public Person(String fullName, String email, String password, String telephone) {
+    public Owner(String fullName, String email, String password, String telephone) {
         this.fullName = fullName;
         this.email = email;
         this.password = password;

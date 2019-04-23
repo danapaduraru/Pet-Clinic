@@ -34,7 +34,7 @@ public class Pet {
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "id_owner")
-    private Person person;
+    private Owner owner;
 
     public Long getId() {
         return id;
@@ -84,7 +84,7 @@ public class Pet {
         this.description = description;
     }
 
-    public Person getPerson() {
-        return person;
+    public Owner getOwner() {
+        return owner;
     }
 }
