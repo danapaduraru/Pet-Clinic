@@ -31,11 +31,6 @@ public class Pet {
     @Column(name = "description")
     private String description;
 
-    /*@NotNull
-    @OneToOne(fetch = FetchType.LAZY)
-    @MapsId("id")
-    private Person person;*/
-
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "id_owner")
@@ -87,5 +82,9 @@ public class Pet {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Person getPerson() {
+        return person;
     }
 }

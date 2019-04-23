@@ -82,4 +82,8 @@ public class Person {
     public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
+
+    public List<Pet> getPets() {
+        return pets;
+    }
 }

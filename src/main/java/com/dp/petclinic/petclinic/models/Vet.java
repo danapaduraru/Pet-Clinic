@@ -1,8 +1,11 @@
 package com.dp.petclinic.petclinic.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "vet")
@@ -32,6 +35,10 @@ public class Vet {
     @NotNull
     @Column(name = "specialization")
     private String specialization;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "vet")
+    @JsonManagedReference
+    private List<Appointment> appointments;
 
     public Vet(String fullName, String email, String password, String telephone, String specialization) {
         this.fullName = fullName;
@@ -87,5 +94,9 @@ public class Vet {
 
     public void setSpecialization(String specialization) {
         this.specialization = specialization;
+    }
+
+    public List<Appointment> getAppointments() {
+        return appointments;
     }
 }
