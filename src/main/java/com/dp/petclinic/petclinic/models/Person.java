@@ -1,8 +1,11 @@
 package com.dp.petclinic.petclinic.models;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
+import java.util.List;
 
 @Entity
 @Table(name = "person")
@@ -28,6 +31,10 @@ public class Person {
     @NotNull
     @Column(name = "telephone")
     private String telephone;
+
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "person")
+    @JsonManagedReference
+    private List<Pet> pets;
 
     public Person(String fullName, String email, String password, String telephone) {
         this.fullName = fullName;
