@@ -2,6 +2,7 @@
 Dark background: #332f2c;
 Light background: #f0f0f0
 Accent color: #651FFF;
+Lighter accent color: #7C4DFF;
  */
 
 /*******************************************
@@ -56,15 +57,33 @@ nav p {
     text-transform: none;
     font-weight: 300;
     margin-top: 2.8%;
-    margin-right: 40%;
+    margin-right: 25%;
 }
 
 nav a {
     font-size: 110%;
+    font-weight: 300;
     margin-top: 3%;
     margin-right: 2%;
     color: white;
     text-decoration: none;
+    height: 30%;
+    padding: 0.5%;
+}
+
+nav a:hover {
+    color: #7C4DFF;
+}
+
+.btn-nav {
+    background-color: #651FFF;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-nav:hover {
+    background-color: #7C4DFF;
+    color: white;
 }
 
 
@@ -78,15 +97,28 @@ form {
     margin-left: 30%;
 }
 
-input[type=text] {
+.wrapper-grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+input, textarea, select {
     font-family: Montserrat, sans-serif;
-    font-size: 120%;
-    width: 60%;
+    font-size: 90%;
+    width: 70%;
     padding: 12px 20px;
     margin-top: 3%;
-    display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+select {
+    width: 67%;
+}
+
+label {
+    font-size: 120%;
+    margin-top: 12%;
 }
 
 .btn {
@@ -99,7 +131,7 @@ input[type=text] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    width: 40%;
+    width: 55%;
 }
 
 .btn:hover {

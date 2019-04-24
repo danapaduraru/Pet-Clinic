@@ -21,12 +21,13 @@
         <a href="/"> Home </a>
         <a href="/veterinarians"> Veterinarians </a>
         <a href="/login"> Login </a>
+        <a class="btn-nav" href="/appointment"> Make Appointment </a>
     </nav>
 
     <h1> Login as a veterinarian </h1>
     <form>
         <input type="text" name="email" placeholder="email"> <br>
-        <input type="text" name="password" placeholder="password"> <br>
+        <input type="password" name="password" placeholder="password"> <br>
         <input class="btn" type="submit" value="Submit">
     </form>
 
