@@ -1,6 +1,7 @@
 /*
 Dark background: #332f2c;
 Light background: #f0f0f0
+Accent color: #651FFF;
  */
 
 /*******************************************
@@ -13,9 +14,18 @@ body {
     margin: 0 auto;
 }
 
+h1 {
+    font-size: 200%;
+    text-align: center;
+}
+
+p {
+    font-size: 130%;
+}
+
 
 /********************************************
-                    HEADER
+                HEADER, NAV
 ********************************************/
 
 .above-header {
@@ -35,6 +45,7 @@ nav {
 }
 
 nav h1 {
+    text-align: left;
     font-size: 230%;
     margin-right: 2%;
     margin-left: 2%;
@@ -56,10 +67,41 @@ nav a {
     text-decoration: none;
 }
 
-h1 {
-    font-size: 200%;
+
+/********************************************
+              FORM, BUTTONS
+********************************************/
+
+form {
+    text-align: center;
+    margin-right: 30%;
+    margin-left: 30%;
 }
 
-p {
+input[type=text] {
+    font-family: Montserrat, sans-serif;
+    font-size: 120%;
+    width: 60%;
+    padding: 12px 20px;
+    margin-top: 3%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 2%;
+    margin-top: 3%;
+    font-family: Montserrat, sans-serif;
     font-size: 130%;
+    color: white;
+    background-color: #651FFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 40%;
+}
+
+.btn:hover {
+    background-color: #7C4DFF;
 }

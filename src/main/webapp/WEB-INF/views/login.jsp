@@ -5,10 +5,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html lang="en">
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="resources/stylesheets/index.css" type="text/css"/>
-    <title>Pet Clinic | Home</title>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+<link rel="stylesheet" href="resources/stylesheets/index.css" type="text/css"/>
+<title>Pet Clinic | Login</title>
 </head>
 
 <body>
@@ -22,6 +22,13 @@
         <a href="/"> Veterinarians </a>
         <a href="/login"> Login </a>
     </nav>
+
+    <h1> Login as a veterinarian </h1>
+    <form>
+        <input type="text" name="email" placeholder="email"> <br>
+        <input type="text" name="password" placeholder="password"> <br>
+        <input class="btn" type="submit" value="Submit">
+    </form>
 
 </body>
 
