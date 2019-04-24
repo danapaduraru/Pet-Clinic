@@ -144,6 +144,38 @@ label {
 
 
 /********************************************
+                 TABLE
+********************************************/
+
+table {
+    margin-left: 25%;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    background-color: #332f2c;
+    color: white;
+    padding: 3%;
+    border: 1px solid #ddd;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 3%;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+td:first-child {
+    color: #651FFF;
+}
+
+
+/********************************************
                  FOOTER
 ********************************************/
 
@@ -157,6 +189,7 @@ footer {
     text-align: center;
     font-size: 80%;
 }
+
 body::after {
     content: '';
     display: block;

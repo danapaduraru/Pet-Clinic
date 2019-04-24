@@ -1,3 +1,4 @@
+<%@ page import="com.dp.petclinic.petclinic.services.VetService" %>
 <!DOCTYPE html>
 
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
@@ -15,6 +16,23 @@
     <jsp:include page="nav.jsp"></jsp:include>
 
     <h1> Veterinarians </h1>
+
+    <div class="vets-list">
+        <table>
+            <th>Name</th>
+            <th>Specialization</th>
+            <th>Email</th>
+            <th>Office Phone</th>
+        <c:forEach items="${vetList}" var="item">
+            <tr>
+                <td>${item.getFullName()}</td>
+                <td>${item.getSpecialization()}</td>
+                <td>${item.getEmail()}</td>
+                <td>${item.getTelephone()}</td>
+            </tr>
+        </c:forEach>
+        </table>
+    </div>
 
     <jsp:include page="footer.jsp"></jsp:include>
 </body>
