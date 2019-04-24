@@ -12,5 +12,4 @@ public class OwnerController {
     @Autowired
     OwnerService ownerService;
 
-    
 }
