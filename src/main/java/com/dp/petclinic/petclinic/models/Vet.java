@@ -96,4 +96,7 @@ public class Vet {
         this.specialization = specialization;
     }
 
+    public List<Pet> getPets() {
+        return pets;
+    }
 }

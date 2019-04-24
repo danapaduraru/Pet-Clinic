@@ -49,6 +49,15 @@ public class Appointment {
     @JoinColumn(name = "vet_id")
     private Vet vet;
 
+    public Appointment(String fullName, String email, String telephone, String date, String petType, String description) {
+        this.fullName = fullName;
+        this.email = email;
+        this.telephone = telephone;
+        this.date = date;
+        this.petType = petType;
+        this.description = description;
+    }
+
     public Long getId() {
         return id;
     }
@@ -79,5 +88,45 @@ public class Appointment {
 
     public void setVet(Vet vet) {
         this.vet = vet;
+    }
+
+    public String getFullName() {
+        return fullName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getTelephone() {
+        return telephone;
+    }
+
+    public void setTelephone(String telephone) {
+        this.telephone = telephone;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getPetType() {
+        return petType;
+    }
+
+    public void setPetType(String petType) {
+        this.petType = petType;
     }
 }

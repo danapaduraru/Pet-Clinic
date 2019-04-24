@@ -44,6 +44,16 @@ public class Pet {
     @MapsId("id_appointment")
     private Appointment appointment;
 
+    public Pet(String type, String name, String age, String weight, String breed, String observations, String treatment) {
+        this.type = type;
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.breed = breed;
+        this.observations = observations;
+        this.treatment = treatment;
+    }
+
     public Long getId() {
         return id;
     }
@@ -84,4 +94,43 @@ public class Pet {
         this.breed = breed;
     }
 
+    public String getWeight() {
+        return weight;
+    }
+
+    public void setWeight(String weight) {
+        this.weight = weight;
+    }
+
+    public String getObservations() {
+        return observations;
+    }
+
+    public void setObservations(String observations) {
+        this.observations = observations;
+    }
+
+    public String getTreatment() {
+        return treatment;
+    }
+
+    public void setTreatment(String treatment) {
+        this.treatment = treatment;
+    }
+
+    public Vet getVet() {
+        return vet;
+    }
+
+    public void setVet(Vet vet) {
+        this.vet = vet;
+    }
+
+    public Appointment getAppointment() {
+        return appointment;
+    }
+
+    public void setAppointment(Appointment appointment) {
+        this.appointment = appointment;
+    }
 }
