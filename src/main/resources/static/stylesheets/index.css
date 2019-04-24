@@ -13,6 +13,10 @@ body {
     font-family: Montserrat, sans-serif;
     background-color: #f0f0f0;
     margin: 0 auto;
+
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 h1 {
@@ -113,7 +117,7 @@ input, textarea, select {
 }
 
 select {
-    width: 67%;
+    width: 80%;
 }
 
 label {
@@ -136,4 +140,26 @@ label {
 
 .btn:hover {
     background-color: #7C4DFF;
+}
+
+
+/********************************************
+                 FOOTER
+********************************************/
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -130px;
+    background-color: #332f2c;
+    color: white;
+    text-align: center;
+    font-size: 80%;
+}
+body::after {
+    content: '';
+    display: block;
+    height: 130px;
+    /* Set same as footer's height */
 }
