@@ -5,17 +5,24 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 <html lang="en">
-
-<link>
     <meta charset="UTF-8">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="resources/stylesheets/index.css" type="text/css"></link>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="resources/stylesheets/index.css" type="text/css"/>
     <title>Pet-Clinic</title>
 </head>
 
 <body>
 
-    <h1> Pet Clinic </h1>
+    <div class="above-header"></div>
+
+    <nav>
+        <h1> Pet Clinic </h1>
+        <p><em> Purrfect for your pet! </em></p>
+        <a href="index.jsp"> Home </a>
+        <a href="index.jsp"> Veteranians </a>
+        <a href="index.jsp"> Login </a>
+    </nav>
+
 </body>
 
 </html>
