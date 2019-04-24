@@ -5,8 +5,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-public class AppointmentController {
+public class VetPageController {
 
-    @RequestMapping(value="/appointment",method = RequestMethod.GET)
-    public String getAppointmentPage() { return "appointment"; }
+    @RequestMapping(value="/veterinarians",method = RequestMethod.GET)
+    public String getVeterinariansPage() { return "vet";}
 }
