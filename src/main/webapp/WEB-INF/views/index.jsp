@@ -18,9 +18,9 @@
     <nav>
         <h1> Pet Clinic </h1>
         <p><em> Purrfect for your pet! </em></p>
-        <a href="index.jsp"> Home </a>
-        <a href="index.jsp"> Veteranians </a>
-        <a href="index.jsp"> Login </a>
+        <a href="/"> Home </a>
+        <a href="/"> Veterinarians </a>
+        <a href="/"> Login </a>
     </nav>
 
 </body>

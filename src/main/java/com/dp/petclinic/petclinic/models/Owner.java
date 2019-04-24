@@ -25,10 +25,6 @@ public class Owner {
     private String email;
 
     @NotNull
-    @Column(name = "password")
-    private String password;
-
-    @NotNull
     @Column(name = "telephone")
     private String telephone;
 
@@ -36,10 +32,9 @@ public class Owner {
     @JsonManagedReference
     private List<Pet> pets;
 
-    public Owner(String fullName, String email, String password, String telephone) {
+    public Owner(String fullName, String email, String telephone) {
         this.fullName = fullName;
         this.email = email;
-        this.password = password;
         this.telephone = telephone;
     }
 
@@ -65,14 +60,6 @@ public class Owner {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getTelephone() {
