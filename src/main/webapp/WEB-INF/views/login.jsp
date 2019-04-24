@@ -19,7 +19,7 @@
         <h1> Pet Clinic </h1>
         <p><em> Purrfect for your pet! </em></p>
         <a href="/"> Home </a>
-        <a href="/"> Veterinarians </a>
+        <a href="/veterinarians"> Veterinarians </a>
         <a href="/login"> Login </a>
     </nav>
 
