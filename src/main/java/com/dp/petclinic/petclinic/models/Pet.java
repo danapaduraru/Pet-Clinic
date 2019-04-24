@@ -17,24 +17,32 @@ public class Pet {
     @Column(name = "type")
     private String type;
 
-    @NotNull
     @Column(name = "name")
     private String name;
 
     @Column(name = "age")
     private String age;
 
-    @NotNull
+    @Column(name = "weight")
+    private String weight;
+
     @Column(name = "breed")
     private String breed;
 
-    @Column(name = "description")
-    private String description;
+    @Column(name = "observations")
+    private String observations;
+
+    @Column(name = "treatment")
+    private String treatment;
 
     @ManyToOne
     @JsonBackReference
-    @JoinColumn(name = "id_owner")
-    private Owner owner;
+    @JoinColumn(name = "id_vet")
+    private Vet vet;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @MapsId("id_appointment")
+    private Appointment appointment;
 
     public Long getId() {
         return id;
@@ -76,15 +84,4 @@ public class Pet {
         this.breed = breed;
     }
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
 }

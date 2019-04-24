@@ -3,6 +3,7 @@ package com.dp.petclinic.petclinic.models;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -14,12 +15,25 @@ public class Appointment {
     private Long id;
 
     @NotNull
-    @Column(name = "start_date")
-    private String startDate;
+    @Column(name = "full_name")
+    private String fullName;
 
     @NotNull
-    @Column(name = "end_date")
-    private String endDate;
+    @Email
+    @Column(name = "email")
+    private String email;
+
+    @NotNull
+    @Column(name = "telephone")
+    private String telephone;
+
+    @NotNull
+    @Column(name = "date")
+    private String date;
+
+    @NotNull
+    @Column(name = "petType")
+    private String petType;
 
     @NotNull
     @Column(name = "description")
@@ -35,34 +49,12 @@ public class Appointment {
     @JoinColumn(name = "vet_id")
     private Vet vet;
 
-    public Appointment(String startDate, String endDate, String description) {
-        this.startDate = startDate;
-        this.endDate = endDate;
-        this.description = description;
-    }
-
     public Long getId() {
         return id;
     }
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getStartDate() {
-        return startDate;
-    }
-
-    public void setStartDate(String startDate) {
-        this.startDate = startDate;
-    }
-
-    public String getEndDate() {
-        return endDate;
-    }
-
-    public void setEndDate(String endDate) {
-        this.endDate = endDate;
     }
 
     public String getDescription() {

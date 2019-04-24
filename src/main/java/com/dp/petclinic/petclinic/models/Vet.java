@@ -38,7 +38,7 @@ public class Vet {
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "vet")
     @JsonManagedReference
-    private List<Appointment> appointments;
+    private List<Pet> pets;
 
     public Vet(String fullName, String email, String password, String telephone, String specialization) {
         this.fullName = fullName;
@@ -96,7 +96,4 @@ public class Vet {
         this.specialization = specialization;
     }
 
-    public List<Appointment> getAppointments() {
-        return appointments;
-    }
 }
