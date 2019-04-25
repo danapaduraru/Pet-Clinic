@@ -54,6 +54,8 @@ public class Pet {
         this.treatment = treatment;
     }
 
+    public Pet() { }
+
     public Long getId() {
         return id;
     }

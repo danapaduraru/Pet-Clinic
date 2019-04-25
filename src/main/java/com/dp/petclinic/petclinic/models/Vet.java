@@ -48,9 +48,7 @@ public class Vet {
         this.specialization = specialization;
     }
 
-    public Vet() {
-
-    }
+    public Vet() { }
 
     public Long getId() {
         return id;

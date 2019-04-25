@@ -58,6 +58,8 @@ public class Appointment {
         this.description = description;
     }
 
+    public Appointment() { }
+
     public Long getId() {
         return id;
     }

@@ -14,7 +14,7 @@
 <body>
     <jsp:include page="nav.jsp"></jsp:include>
 
-    <h1> Login as a veterinarian </h1>
+    <h1> Login to enter the application </h1>
     <form>
         <input type="text" name="email" placeholder="email"> <br>
         <input type="password" name="password" placeholder="password"> <br>
