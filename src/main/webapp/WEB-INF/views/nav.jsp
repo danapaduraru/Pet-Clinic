@@ -5,5 +5,6 @@
     <p><em> Purrfect for your pet! </em></p>
     <a href="/"> Home </a>
     <a href="/veterinarians"> Veterinarians </a>
-    <a class="btn-nav" href="/appointment"> Make Appointment </a>
+    <a href="/appointments"> Appointments </a>
+    <a class="btn-nav" href="/make-appointment"> Make Appointment </a>
 </nav>

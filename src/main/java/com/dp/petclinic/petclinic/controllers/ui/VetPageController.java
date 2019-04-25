@@ -14,8 +14,8 @@ public class VetPageController {
     VetService vetService;
 
     @RequestMapping(value="/veterinarians",method = RequestMethod.GET)
-    public String getVeterinariansPage(ModelMap model) {
-        model.addAttribute("vetList",vetService.getAllVets());
+    public String getVeterinariansPage(ModelMap modelMap) {
+        modelMap.addAttribute("vetList",vetService.getAllVets());
         return "vet";
     }
 }

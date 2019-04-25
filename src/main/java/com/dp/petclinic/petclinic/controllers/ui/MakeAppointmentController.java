@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MakeAppointmentController {
 
-    @RequestMapping(value="/appointment",method = RequestMethod.GET)
-    public String getAppointmentPage() { return "appointment"; }
+    @RequestMapping(value="/make-appointment",method = RequestMethod.GET)
+    public String getMakeAppointmentPage() { return "make-appointment"; }
 }

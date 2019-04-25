@@ -15,22 +15,20 @@
 <body>
     <jsp:include page="nav.jsp"></jsp:include>
 
-    <h1> Veterinarians </h1>
+    <h1> Appointments </h1>
 
     <table>
-        <th>Name</th>
-        <th>Specialization</th>
-        <th>Email</th>
-        <th>Office Phone</th>
-        <c:forEach items="${vetList}" var="item">
-            <tr>
-                <td>${item.getFullName()}</td>
-                <td>${item.getSpecialization()}</td>
-                <td>${item.getEmail()}</td>
-                <td>${item.getTelephone()}</td>
-            </tr>
-        </c:forEach>
-    </table>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Pet Type</th>
+            <c:forEach items="${appointmentsList}" var="item">
+                <tr>
+                    <td>${item.getDate()}</td>
+                    <td>${item.getFullName()}</td>
+                    <td>${item.getPetType()}</td>
+                </tr>
+            </c:forEach>
+        </table>
 
     <jsp:include page="footer.jsp"></jsp:include>
 </body>
